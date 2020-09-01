@@ -1,0 +1,69 @@
+@media (min-width: 600px){
+    .principal{
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+    }
+    .box{
+        flex: 1;
+        flex-direction: column;
+        background-color: salmon;
+        padding: 30;
+        margin: 30;
+
+    }
+    .reunion{
+        display: flex;
+        background-color: white;
+        margin: 10px;
+    }
+
+    .columna1{
+        flex-direction: column;
+        flex: 1;
+        align-content: center;
+        justify-content: center;
+    }
+    .columna2{
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        align-content: center;
+        justify-content: center;
+        
+    }
+    .nombre{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+    }
+    .fecha{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+    .activa{
+        font-size: 18px;
+        font-weight: 700;
+        align-self: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: green;
+    }
+
+    
+    .activar{
+        border-radius: 3px;
+        align-self: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .activa, .btnActivar:hover{
+        cursor: pointer;
+    }
+}

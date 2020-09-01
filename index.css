@@ -1,0 +1,38 @@
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.containerPasajeras{
+    flex:1;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.containerPadres{
+    flex:1;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.fondoHeader{
+    background-color: #00d1b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nombreGrupo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.logo{
+    width: 10%;
+
+}

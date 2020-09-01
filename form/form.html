@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="nouislider.css" rel="stylesheet">
+    <script src="nouislider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+    <script type="module" src="./form.js"></script>
+
+    <title>College USA</title>
+</head>
+
+<body>
+
+    <div class="fondo">
+        <div class="row">
+            <div class="pregunta">
+                <label class="container"><span class="rol">Pasajera/o</span>
+                    <input type="checkbox" id="tipoPasajero" class="tipo" value="pasajeras">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container"><span class="rol">Madre/Padre</span>
+                    <input type="checkbox" id="tipoMadres" class="tipo" value="padres">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <span class="explicacion">
+                Puntua del 1 al 10, siendo 1 la mínima importancia y 10 la máxima,
+                que tan relevante son para ti los siguientes puntos a la hora de
+                elegir tu viaje ideal.
+
+            </span>
+            <div class="pregunta">
+                <span class="subtitulo">Seguridad: </span>
+                <br>
+                <input id="puntajeSeguridad" type="range" name="seguridad" class="slider" min="1" max="10" value="5">
+                <br>
+                <center><span class="puntaje" id="labelSeguridad">5</span></center>
+            </div>
+
+            <div class="pregunta">
+                <span class="subtitulo">Coordinacion: </span>
+                <br>
+                <input id="puntajeCoordinacion" type="range" name="coordinacion" class="slider" min="1" max="10"
+                    value="5">
+                <br>
+                <center><span class="puntaje" id="labelCoordinacion">5</span></center>
+            </div>
+
+            <div class="pregunta">
+                <span class="subtitulo">Compras: </span>
+                <br>
+                <input id="puntajeCompras" type="range" name="compras" class="slider" min="1" max="10" value="5">
+                <br>
+                <center><span class="puntaje" id="labelCompras">5</span></center>
+            </div>
+
+            <button id="enviar" class="btnEnviar">
+                <h2>ENVIAR</h2>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
